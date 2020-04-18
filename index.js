@@ -1,5 +1,9 @@
+const http = require('http');
+const fs = require('fs');
+
+
 const server = http.createServer((req, res) => {
-    res.send('Hello there, Welcome to FruitFarm!');
+    res.end('Hello there, Welcome to FruitFarm!');
 });
 
 server.listen(8000, '127.0.0.1', () => {
